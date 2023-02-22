@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+
+ul{
+    display: flex;
+    gap: 15px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo{
+    font-size: 32px;
+}
