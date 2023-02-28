@@ -7,7 +7,7 @@ body{
 
 .header, .footer{
     
-    background-color: #1f2937;
+    background-color: #5b1716;
     padding: 10px;
     flex-shrink:0;
     height: 5vh;
@@ -21,7 +21,12 @@ body{
     align-items: center;
     
 }
-
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+}
 .logo, li {
     color: #f9faf8;
 }
@@ -47,7 +52,7 @@ li{
     justify-content: space-evenly;
     justify-items: center;
     height: 95vh;
-    background-color: #1F2937;
+    background-color: #eae9ec;
     padding: 5vw;
     
 }
@@ -138,14 +143,12 @@ li{
 }
 
 .albums{
-    border: #1F2937;
-    border-width: 1px;
     justify-content: center;
     align-items: center;
 
 }
 .trio{
-    border:5px Solid #3882F6;
+    border:5px Solid #5b1716;
     border-radius: 25px;
 }
 
@@ -178,15 +181,6 @@ li{
     display: flex;
     justify-content: end;
    
-}
-
-
-
-.footer{
-    display: flex;
-    color: #f9faf8;
-    justify-content: center;
-    align-items: center;
 }
 
 .call_to_action{
