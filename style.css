@@ -5,16 +5,21 @@ body{
     width: 100vw;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header, .footer{
+    
     background-color: #1f2937;
-    padding: 15px;
+    padding: 10px;
     flex-shrink:0;
     height: 5vh;
     padding-left:10vw;
     padding-right:10vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .logo, li {
@@ -33,25 +38,25 @@ li{
 }
 
 .logo{
-    font-size: 32px;
+    width: 225px;
+    flex-shrink: 0;
 }
 
 .sign_up_section{
     display: flex;
-    
-    justify-content: space-around;
+    justify-content: space-evenly;
     justify-items: center;
-    height: 22.5vh;
+    height: 95vh;
     background-color: #1F2937;
-    padding-left:10vw;
-    padding-right: 10vw;
-    padding-bottom: 10px;
+    padding: 5vw;
+    
 }
 
 .left_side{
-    
-    justify-content: center;
+    justify-content: space-between;
+    gap: 100px;
     align-items: center;
+
     
 }
 .right_side{
@@ -75,6 +80,7 @@ li{
 .testimony{
     height: 22.5vh;
     background-color: #e5e7eb;
+    flex-shrink: 0;
 }
 .call_to_action{
     height: 22.5vh;
@@ -84,10 +90,10 @@ li{
     height: 5vh;
 }
 
-img{
+.keshi_pic{
     max-width: 100%;
     max-height: 100%;
-    flex-shrink: 1;
+    flex-shrink: 0;
     flex-grow: 1;
     
 }
@@ -101,10 +107,98 @@ img{
     background-color: #3882F6;
     color: white;
     height: 50px;
+    width: 75px;
+    border-radius: 25px;
     
 
 }
 
 .information{
     display: flex;
+    height:50vh;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    gap: 50px;
+}
+.top{
+    display: flex;
+    height: auto;
+}
+
+.bottom {
+    display:flex;
+    flex-wrap: wrap;
+    gap:25px;
+    
+   
+}
+
+.albums{
+    border: #1F2937;
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+
+}
+.trio{
+    border:5px Solid #3882F6;
+    border-radius: 25px;
+}
+
+.sub_header{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color:#e5e7eb;
+    font-size: 36px;
+    font:light italic;
+    color:#1F2937;
+    height:35vh;
+}
+
+.quote{
+    display: flex;
+    justify-content: start;
+   
+}
+
+.author{
+    display: flex;
+    justify-content: end;
+   
+}
+
+
+
+.footer{
+    display: flex;
+    color: #f9faf8;
+    justify-content: center;
+    align-items: center;
+}
+
+.call_to_action{
+    display: flex;
+    height: 22.5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    margin:60px;
+    border-radius: 25px;
+    padding: 35px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
 }
