@@ -1,12 +1,14 @@
-body{
+body, .header, .footer, .sign_up_section, .information, .bottom, .testimony, .quote, .call_to_action, .author{
     display: flex;
+}
+
+body{
     flex-direction: column;
     height: 100vh;
     width: 100vw;
 }
 
 .header, .footer{
-    
     background-color: #5b1716;
     padding: 10px;
     flex-shrink:0;
@@ -16,28 +18,29 @@ body{
 }
 
 .header{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
 .footer{
-    display: flex;
     justify-content: center;
     align-items: center;
-    color: #f9faf8;
 }
-.logo, li {
+
+.logo, li, .footer, .testimony{
     color: #f9faf8;
 }
 ul{
-    display: flex;
     gap: 15px;
 }
 
-li{
+li, .call_to_action{
     text-decoration: none;
     list-style: none;
+    
+    
+}
+li{
     font-size: 18px;
     font-weight: normal;
 }
@@ -48,7 +51,6 @@ li{
 }
 
 .sign_up_section{
-    display: flex;
     justify-content: space-evenly;
     justify-items: center;
     height: 95vh;
@@ -77,20 +79,14 @@ li{
     color: white;
 }
 
-.top{
-    height: 22.5vh;
-
+.top, .call_to_action, .testimony{
+    height: 22.5vh; 
 }
 
 .testimony{
-    height: 22.5vh;
-    background-color: #e5e7eb;
     flex-shrink: 0;
 }
-.call_to_action{
-    height: 22.5vh;
-    
-}
+
 .footer{
     height: 5vh;
 }
@@ -100,7 +96,6 @@ li{
     max-height: 100%;
     flex-shrink: 0;
     flex-grow: 1;
-    
 }
 
 .desc {
@@ -114,12 +109,9 @@ li{
     height: 50px;
     width: 75px;
     border-radius: 25px;
-    
-
 }
 
 .information{
-    display: flex;
     height:50vh;
     flex-direction: column;
     flex-grow: 0;
@@ -130,16 +122,12 @@ li{
     gap: 50px;
 }
 .top{
-    display: flex;
     height: auto;
 }
 
 .bottom {
-    display:flex;
     flex-wrap: wrap;
-    gap:25px;
-    
-   
+    gap:25px;  
 }
 
 .albums{
@@ -159,7 +147,6 @@ li{
 }
 
 .testimony{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 200px;
@@ -172,19 +159,14 @@ li{
 }
 
 .quote{
-    display: flex;
     justify-content: start;
-   
 }
 
 .author{
-    display: flex;
     justify-content: end;
-   
 }
 
 .call_to_action{
-    display: flex;
     height: 22.5vh;
     justify-content: center;
     align-items: center;
@@ -192,7 +174,5 @@ li{
     margin:60px;
     border-radius: 25px;
     padding: 35px;
-    text-decoration: none;
     color: white;
-    list-style: none;
 }
