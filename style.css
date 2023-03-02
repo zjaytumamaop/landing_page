@@ -1,13 +1,16 @@
-body, .header, .footer, .sign_up_section, .information, .bottom, .testimony, .quote, .call_to_action, .author{
+body, .header, .footer, .sign_up_section, .information, .bottom, .testimony, .quote, .call_to_action, .author, .header_links{
     display: flex;
 }
-
-body{
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+.logo, li, .footer, .testimony{
+    color: #f9faf8;
 }
-
+ul, .call_to_action, .link_one, .link_two, .link_three, .sign_up{
+    text-decoration: none;
+    list-style: none; 
+    font-size: 18px;
+    font-weight: normal;
+    color:#f9faf8;
+}
 .header, .footer{
     background-color: #5b1716;
     padding: 10px;
@@ -16,69 +19,66 @@ body{
     padding-left:10vw;
     padding-right:10vw;
 }
-
+body{
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
 .header{
     justify-content: space-between;
     align-items: center;
-    
 }
 .footer{
     justify-content: center;
     align-items: center;
 }
-
-.logo, li, .footer, .testimony{
-    color: #f9faf8;
-}
 ul{
     gap: 15px;
 }
-
-li, .call_to_action{
-    text-decoration: none;
-    list-style: none;
-    
-    
-}
-li{
-    font-size: 18px;
-    font-weight: normal;
-}
-
 .logo{
     width: 225px;
     flex-shrink: 0;
 }
-
 .sign_up_section{
-    justify-content: space-evenly;
-    justify-items: center;
+    gap: 100px;
     height: 95vh;
     background-color: #eae9ec;
     padding: 5vw;
-    
 }
-
 .left_side{
-    justify-content: space-between;
-    gap: 100px;
-    align-items: center;
-
-    
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    height: auto;
+    width: 40vw;
+    padding: 10px;
 }
 .right_side{
-    
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+    width:40vw;
 }
 .title {
     font-size: 48px;
     font-weight:bolder;
+    color: #5b1716;
+}
+.sign_up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b1716;
     color: white;
+    padding: 25px;
+    border-radius: 25px;
 }
 
+.keshi_pic{
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
 .top, .call_to_action, .testimony{
     height: 22.5vh; 
 }
@@ -91,53 +91,61 @@ li{
     height: 5vh;
 }
 
-.keshi_pic{
-    max-width: 100%;
-    max-height: 100%;
-    flex-shrink: 0;
-    flex-grow: 1;
-}
+
 
 .desc {
-    font-size: 18px;
-    color:#e5e7eb
+    display: block;
+    overflow: hidden;
+    font-size: 30px;
+    color:black;
+   text-overflow: ellipsis;
+   word-wrap: break-word;
+   line-height: 1em;
+   max-height: 10em;
 }
 
-.sign_up{
-    background-color: #3882F6;
-    color: white;
-    height: 50px;
-    width: 75px;
-    border-radius: 25px;
-}
 
 .information{
     height:50vh;
     flex-direction: column;
-    flex-grow: 0;
+    flex: 1 1 0 ;
     justify-content: space-around;
-    align-items: center;
     justify-items: center;
+    align-items: center;
     padding: 30px;
     gap: 50px;
+    flex-flow: column wrap;
+  
 }
 .top{
     height: auto;
+    flex: 1 1 0;
 }
 
 .bottom {
-    flex-wrap: wrap;
     gap:25px;  
 }
 
 .albums{
+
     justify-content: center;
     align-items: center;
+    flex-shrink: 1;
+    
+}
 
+.album_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 .trio{
+    display: flex;
+    flex-flow: row wrap;
     border:5px Solid #5b1716;
     border-radius: 25px;
+    flex-shrink: 1;
 }
 
 .sub_header{
@@ -146,31 +154,35 @@ li{
     font-weight: bolder;
 }
 
-.testimony{
-    flex-direction: column;
-    justify-content: center;
+.testimony, .author{
     padding-left: 200px;
     padding-right: 200px;
+    padding-bottom: 0;
     background-color:#e5e7eb;
-    font-size: 36px;
     font:light italic;
     color:#1F2937;
-    height:35vh;
+    height:auto;
 }
-
+.testimony{
+    padding-top: 200px;
+}
 .quote{
-    justify-content: start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 40px;
 }
 
 .author{
+    padding-bottom: 200px;
     justify-content: end;
+    font-size: 40px;
 }
 
 .call_to_action{
     height: 22.5vh;
     justify-content: center;
     align-items: center;
-    background-color: #3882F6;
+    background-color: #5b1716;
     margin:60px;
     border-radius: 25px;
     padding: 35px;
